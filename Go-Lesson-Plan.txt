@@ -6,6 +6,7 @@
 		- GOOS
 		- GOARCH
 	2.packages
+		- import keyword
 		- _ underscore
 		- . dot
 		- alias
