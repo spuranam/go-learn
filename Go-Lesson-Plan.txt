@@ -15,51 +15,54 @@
 		- visibility rules
 	4.constants
 		- cont keyword
-	5.arrays
+	5.data types
+		- type assertion
+		- type switch
+	6.arrays
 		-literal syntax
 		-len
 		-... shorthand
-	6.slice
+	7.slice
 		-literal syntax
 		-len
 		-cap
 		-make
 		-append
 		-copy
-	7.map
+	8.map
 		-cap
 		-make
 		-delete
 		-comma ok idiom
-	8.branching
+	9.branching
 		- if, if-then-else
 		- switch
-	9.looping
+	10.looping
 		- for
 		- for range
 		- beark, continue
-	10.error handling
+	11.error handling
 		- fmt.Errorf
 		- errors
-	11.struct
+	12.struct
 		- nil struct
 		- embeding
-	12.functions
+	13.functions
 		- func keyword
 		- multiple return values
 		- variadic paramters
 		- function literals
 		- function types
 		- closures
-	13.reflections
-	14.interfaces
+	14.reflections
+	15.interfaces
 		- empty interface
 		- interface embeding
-	15.methods
+	16.methods
 		- method set
 		- value reciever
 		- pointer receiver
-	16.concurrancy
+	17.concurrancy
 		- goroutinue
 		- channel
 			- nil channel
@@ -68,11 +71,11 @@
 		- sync/WaitGroup
 
 -Advanced
-	17.net package
+	18.net package
 		- rpc
 		- http
-	18. godoc
-	19. testing
-	20. bechmarking
-	21. profiling
-	22. race detector
+	19. godoc
+	20. testing
+	21. bechmarking
+	22. profiling
+	23. race detector
