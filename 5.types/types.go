@@ -1,3 +1,7 @@
+// Attributions
+// some of the details below have been reproduced here from;
+// Effective Go [http://golang.org/doc/effective_go.html]
+// The Go Programming Language Specification [http://golang.org/ref/spec]
 package main
 
 import (

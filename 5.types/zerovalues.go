@@ -1,10 +1,15 @@
+// Attributions
+// some of the details below have been reproduced here from;
+// Effective Go [http://golang.org/doc/effective_go.html]
+// The Go Programming Language Specification [http://golang.org/ref/spec]
 package main
 
 import "fmt"
 
 func main() {
 	// In Go there are two distinct categories of types:
-
+	//------------------------
+	
 	// 1. Value type variables point directly to their value contained in memory.
 	// All types explored in previous sections except "pointer", "slice", "map",
 	// and "channel" are value types.
@@ -12,6 +17,23 @@ func main() {
 	// 2. Reference types variable "pointer, slice, map, and channel", contains the
 	// address of the memory location where the value is stored.
 
+	// Merory allocation in Go
+	//------------------------
+	// Go has two allocation primitives, the built-in functions new and make. 
+	// They do different things and apply to different types, which can be 
+	// confusing, but the rules are simple.
+
+	// allocation with new
+	//------------------------
+	// Let's talk about new first. It's a built-in function that allocates memory,
+	//  but unlike its namesakes in some other languages it does not initialize
+	// the memory, it only zeros it. That is, new(T) allocates zeroed storage for
+	// a new item of type T and returns its address, a value of type *T.
+	// In Go terminology, it returns a pointer to a newly allocated zero value of type T.
+
+	// Since the memory returned by new is zeroed, it's helpful to arrange when
+	// designing your data structures that the zero value of each type can be used without further initialization.
+	
 	// Memory allocated as a result of declaring a variable of value type is zeroed. This is
 	// know as the zero value of the type. This behavior is illustated in the following
 	// code fragment
@@ -43,8 +65,17 @@ func main() {
 	fmt.Printf("g = %#v (%T)\n", g, g)
 	fmt.Printf("h = %#v (%T)\n", h, h)
 
-	// reference types on the hand needs to be initialized, either using a literal
-	// synatx or by using a built in function called "make".
+	// allocation with make
+	//------------------------
+	// The built-in function make(T, args) serves a purpose different from new(T).
+	// It creates slices, maps, and channels only, and it returns an initialized (not zeroed)
+	// value of type T (not *T). The reason for the distinction is that these three types
+	// represent, under the covers, references to data structures that must be initialized 
+	// before use. A slice, for example, is a three-item descriptor containing a pointer to 
+	// the data (inside an array), the length, and the capacity, and until those items are
+	// initialized, the slice is nil. For slices, maps, and channels, make initializes the
+	// internal data structure and prepares the value for use.
+
 	var i []int64
 	if i == nil {
 		fmt.Println("i is nil")
