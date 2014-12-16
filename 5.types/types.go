@@ -3,7 +3,28 @@ package main
 import (
 	"fmt"
 	"math/cmplx"
+	"math/rand"
+	"strings"
+	"time"
 )
+
+// interface defines a set of methods. A type is said to satify an interface
+// when it implements all methods listed in the interface type.
+
+// all types in go satisfy and empty interface "interface{}", since an empty
+// interface contains no methods. A alluded to ealier a type satfies an interface
+// if it implements all the methods called for, since an empty interface does
+// define and methods hence all type satisfy an empty interface.
+
+type Upcaser interface {
+	upcase() string
+}
+
+type greetings string
+
+func (g greetings) upcase() string {
+	return strings.ToUpper(string(g))
+}
 
 func main() {
 
@@ -87,13 +108,52 @@ func main() {
 	c1 := car{model: "Escape", make: "Ford"}
 	fmt.Printf("%#v (%T)\n", c1, c1)
 
-	//pointer
+	// pointer is type, whose value refers directly to (or "points to") another value stored
+	// elsewhere in the computer memory using its address
+	// To get the address of a value use address-of operator "&".
+	// NOTE that the value of an uninitialized pointer is nil.
+	cp := &c1
+	fmt.Printf("%#v (%T)\n", cp, cp)
 
-	//function
+	// function type denotes the set of all function with same paramter and result type
+	// functions are declared using the "func" keyword
+	type binFunc func(x, y int) int
 
-	//interface
+	// seed the random number generator
+	rand.Seed(int64(time.Now().Nanosecond()))
 
-	//map
+	// create a slice of function of the type binFunc
+	fns := []binFunc{
+		func(x, y int) int { return x + y },
+		func(x, y int) int { return x - y },
+		func(x, y int) int { return x * y },
+		func(x, y int) int { return x / y },
+		func(x, y int) int { return x % y },
+	}
 
-	//channel
+	// randomly pick one function from the slice
+	f := fns[rand.Intn(len(fns))]
+	fmt.Printf("%v (%T)\n", f, f)
+
+	n, m := 1, 2
+	fmt.Printf("%v (%T)\n", f(n, m), f(n, m))
+
+	greet := greetings("hello")
+	gu := greet.upcase()
+	fmt.Printf("%s (%T)\n", gu, gu)
+
+	// A map is an unordered group of elements of one type, called the
+	// element type, indexed by a set of unique keys of another type,
+	// called the key type. The value of an uninitialized map is nil.
+
+	unitPrice := make(map[string]float64)
+	unitPrice["egg"] = 10.20
+	unitPrice["milk"] = 2.45
+	fmt.Printf("%#v (%T)\n", unitPrice, unitPrice)
+
+	polygons := map[string]int{"square": 4, "triagle": 3, "pentagon": 5}
+	fmt.Printf("%#v (%T)\n", polygons, polygons)
+
+	//channel type provides a means of communications for concurrently executing function.
+	// the details of which will be covered in its own section later in the course.
 }
