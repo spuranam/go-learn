@@ -18,6 +18,7 @@
 		- cont keyword
 	5.data types
 		- basic types
+		- zero value
 		- type assertion
 		- type switch
 	6.arrays
