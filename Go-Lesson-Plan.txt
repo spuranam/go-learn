@@ -19,6 +19,7 @@
 	5.data types
 		- basic types
 		- zero value
+		- type conversion
 		- type assertion
 		- type switch
 	6.arrays
