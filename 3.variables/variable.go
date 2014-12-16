@@ -13,6 +13,7 @@ var a int
 var c float64
 var d bool
 
+// you can group several variable
 var (
 	e    int64
 	f, g uint32
