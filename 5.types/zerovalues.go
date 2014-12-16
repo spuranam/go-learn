@@ -32,7 +32,8 @@ func main() {
 	// In Go terminology, it returns a pointer to a newly allocated zero value of type T.
 
 	// Since the memory returned by new is zeroed, it's helpful to arrange when
-	// designing your data structures that the zero value of each type can be used without further initialization.
+	// designing your data structures that the zero value of each type can be used without
+	// further initialization.
 	
 	// Memory allocated as a result of declaring a variable of value type is zeroed. This is
 	// know as the zero value of the type. This behavior is illustated in the following
