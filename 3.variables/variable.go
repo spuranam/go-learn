@@ -13,7 +13,7 @@ var a int
 var c float64
 var d bool
 
-// you can group several variable
+// you can group several variable, saves you from the repeating the "var" keyword
 var (
 	e    int64
 	f, g uint32
