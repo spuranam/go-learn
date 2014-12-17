@@ -9,10 +9,12 @@ The lessons are broken into serveral sections. Each section offers details about
 
 ## Running the code examples
 
-**Installing Go**
+**_Installing Go_**
+
 [Vist this page to install Go development tools] (http://golang.org/doc/install)
 
-**Build & Run sample**
+**_Build & Run sample_**
+
 go build name_of_program (this will compile your programs, and generate the binary)
 go run name_of_program (this will compile your programs, execute it, and throws away the binary generated)
 go install name_of_program (this will compile your programs, and install it in bin subdirectory of your GOPATH)
