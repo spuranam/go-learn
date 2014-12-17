@@ -34,7 +34,6 @@
 		-append
 		-copy
 	8.map
-		-cap
 		-make
 		-delete
 		-comma ok idiom
