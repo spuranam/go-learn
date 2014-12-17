@@ -11,11 +11,15 @@ func main() {
 	//------------------------
 	
 	// 1. Value type variables point directly to their value contained in memory.
-	// All types explored in previous sections except "pointer", "slice", "map",
-	// and "channel" are value types.
+	// All types explored in previous sections except "pointer, slice, map,
+	// channel, interface and function values" are value types.
 
-	// 2. Reference types variable "pointer, slice, map, and channel", contains the
-	// address of the memory location where the value is stored.
+	// 2. Reference types variable "pointer, slice, map, channel, interface 
+	// and function values". These are values that contain a header value 
+	// that references an underlying data structure via a pointer and other meta-data.
+	// We rarely share reference type values with a pointer because the header
+	// value is designed to be copied. The header value already contains a pointer
+	// which is sharing the underlying data structure for us by default.
 
 	// Merory allocation in Go
 	//------------------------
