@@ -41,32 +41,31 @@
 		- if, if-then-else
 		- switch
 		- defer
-	10.looping
 		- for
 		- for range
 		- beark, continue
-	11.error handling
+	10.error handling
 		- fmt.Errorf
 		- errors
-	12.struct
+	11.struct
 		- nil struct
 		- embeding
-	13.functions
+	12.functions
 		- func keyword
 		- multiple return values
 		- variadic paramters
 		- function literals
 		- function types
 		- closures
-	14.reflections
-	15.interfaces
+	13.reflections
+	14.interfaces
 		- empty interface
 		- interface embeding
-	16.methods
+	15.methods
 		- method set
 		- value reciever
 		- pointer receiver
-	17.concurrancy
+	16.concurrancy
 		- goroutinue
 		- channel
 			- nil channel
@@ -75,11 +74,11 @@
 		- sync/WaitGroup
 
 -Advanced
-	18.net package
+	17.net package
 		- rpc
 		- http
-	19. godoc
-	20. testing
-	21. bechmarking
-	22. profiling
-	23. race detector
+	18. godoc
+	19. testing
+	20. bechmarking
+	21. profiling
+	22. race detector
