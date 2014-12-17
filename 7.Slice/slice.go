@@ -102,7 +102,7 @@ func main() {
 	fmt.Printf("newSlice = %v\n", newSlice)
 
 	// use the subscript notation to access an slice element.
-	// NOTE: trying to access a existing index will cause run-time crash
+	// NOTE: trying to access a non-existing index will cause run-time crash
 	fmt.Printf("First day of the week is %s\n", weekDays[0])
 
 	// you can also iterate over the array using for..range loop
