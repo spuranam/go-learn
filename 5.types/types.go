@@ -147,8 +147,14 @@ func main() {
 	fmt.Printf("%s (%T)\n", gu, gu)
 
 	// A map is an unordered group of elements of one type, called the
-	// element type, indexed by a set of unique keys of another type,
+	// element or value type, indexed by a set of unique keys of another type,
 	// called the key type. The value of an uninitialized map is nil.
+	// The key can be of any type for which the equality operator is defined,
+	// such as integers, floating point and complex numbers, strings, pointers,
+	// interfaces (as long as the dynamic type supports equality), structs 
+	// and arrays. Slices cannot be used as map keys, because equality is 
+	// not defined on them. Like slices, maps hold references to an underlying
+	// data structure. 
 
 	unitPrice := make(map[string]float64)
 	unitPrice["egg"] = 10.20
