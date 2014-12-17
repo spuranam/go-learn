@@ -3,6 +3,8 @@
 // packages can import them.
 
 // Programs starts executing in the main package, specifically in the main function
+// NOTE: Its complie time error to import a package and not use it. The only exception
+// to this to use _ (underscore) import statement. see sample se.go for details.
 package main
 
 import "./calc"
