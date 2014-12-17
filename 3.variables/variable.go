@@ -3,10 +3,13 @@ package main
 import "fmt"
 
 // declare a variable, notice the use of "var" keyword
-// un-initialized variable "City" is initialized to the zero value, in this case an empty string
-// indentifiers that start with uppercase letter are exported .i.e. they are visible outside the
-// package they are defined.
-// addtionally the type of variable appears after the name, unlike Java, C, or C++
+// un-initialized variable "City" is initialized to the zero value, 
+// in this case an empty string indentifiers that start with uppercase
+// letter are exported .i.e. they are visible outside the package they 
+// are defined. addtionally the type of variable appears after the 
+// name, unlike Java, C, or C++
+
+// NOTE: Its complie time error to define a variable and not use it
 var City string
 
 var a int
