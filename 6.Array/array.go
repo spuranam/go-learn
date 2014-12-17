@@ -27,7 +27,7 @@ func main() {
 	// case of numbers array the value of third (3) element would set to zero (0)
 	fmt.Printf("numbers = %#v\n", numbers)
 
-	// declare an array using the litral syntax
+	// declare an array using the literal syntax
 	carModels := [3]string{"Fusion", "Fiesta", "Mustang"}
 	fmt.Printf("carModels = %#v\n", carModels)
 
