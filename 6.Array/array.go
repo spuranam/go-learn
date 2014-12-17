@@ -16,11 +16,11 @@ func main() {
 	var numbers [3]int64
 	numbers[0] = 1
 	numbers[1] = 23
-	// Trying to access or set and index that does not exists, results in compile-time error,
+	// Trying to access or set an index that does not exists, results in compile-time error,
 	// since go compiler does array bound ckecking
 	// ./array.go:18: invalid array index 2 (out of bounds for 2-element array)
 	// uncomment the following line to it in action
-	//numbers[2] = 98
+	//numbers[3] = 98
 
 	// array elemnts are zeroed .i.e. the elements that are not assigned a value,
 	// will intialized to their respective types zero value. For example in
@@ -38,6 +38,14 @@ func main() {
 
 	// you can determine the length using the len function
 	fmt.Printf("Number of elements in carModels %d\n", len(carModels))
+
+	// use the subscript notation to access an array element
+	fmt.Printf("First day of the week is %s\n", weekDays[0])
+
+	// you can also iterate over the array using for..range loop
+	for indx, val := range carModels {
+		fmt.Printf("car at index %d is %s\n", indx, val)
+	}
 
 	// multi-dimensional arrays
 	var arr [2][3]string
