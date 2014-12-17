@@ -16,10 +16,16 @@ func main() {
 		fmt.Printf("number is %f\n", num)
 	}
 
-	// If with a short statement
+	// If with a short statement.
+	// NOTE: the scope of variable sqr is limited the enclosing if statement
+	// body
 	if sqr := math.Sqrt(num); sqr < upperBound {
 		fmt.Printf("Square root of %f is %f\n", num, sqr)
 	}
+
+	// uncomment this line to verify that teh variable sqr is not visible
+	// outside the previous defined if block
+	//fmt.Printf("square root of .2f is %.2f\n", sqr, num)
 
 	// if and else
 	if num < upperBound {
