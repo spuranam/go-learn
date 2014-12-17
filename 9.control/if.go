@@ -27,7 +27,8 @@ func main() {
 	// outside the previous defined if block
 	//fmt.Printf("square root of .2f is %.2f\n", sqr, num)
 
-	// if and else
+	// NOTE that its idiomatic to write an if-else-if-else chain as a
+	// switch instead.
 	if num < upperBound {
 		fmt.Printf("%.2f < %.2f\n", num, upperBound)
 	} else if num == upperBound {
