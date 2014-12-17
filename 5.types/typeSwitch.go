@@ -38,7 +38,7 @@ func printString(value interface{}) {
 
 func main() {
 	s := &mockString{"The quick brown fox jumps over the lazy dog"}
-	str := "One upon a time in a land far far away"
+	str := "Once upon a time in a land far far away"
 	printString(s)
 	printString(str)
 }
