@@ -37,7 +37,7 @@
 		-make
 		-delete
 		-comma ok idiom
-	9.branching
+	9.Control structures
 		- if, if-then-else
 		- switch
 		- defer
