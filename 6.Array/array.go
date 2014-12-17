@@ -46,6 +46,11 @@ func main() {
 		fmt.Printf("car at index %d is %s\n", indx, val)
 	}
 
+	// or using for loop
+	for m := 0; m < len(carModels); m++ {
+		fmt.Printf("For: element at index %d is %s\n", m, carModels[m])
+	}
+
 	// multi-dimensional arrays
 	var arr [2][3]string
 	for i := 0; i < 2; i++ {
