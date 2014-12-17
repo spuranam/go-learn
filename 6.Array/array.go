@@ -19,7 +19,7 @@ func main() {
 	// Trying to access or set an index that does not exists, results in compile-time error,
 	// since go compiler does array bound ckecking
 	// ./array.go:18: invalid array index 2 (out of bounds for 2-element array)
-	// uncomment the following line to it in action
+	// uncomment the following line to see the error in action
 	//numbers[3] = 98
 
 	// array elemnts are zeroed .i.e. the elements that are not assigned a value,
