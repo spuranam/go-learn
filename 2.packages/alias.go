@@ -1,5 +1,8 @@
 package main
 
+// import c "./calc" - Creates an alias of calc. Preceed all calc package
+// content with c instead of calc.
+
 import c "./calc"
 import "fmt"
 
