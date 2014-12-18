@@ -37,19 +37,17 @@
 		-make
 		-delete
 		-comma ok idiom
-	9.Control structures
+	9.struct
+		- nil struct
+		- embeding
+	10.pointers
+	11.Control structures
 		- if, if-then-else
 		- switch
 		- defer
 		- for
 		- for range
 		- beark, continue
-	10.error handling
-		- fmt.Errorf
-		- errors
-	11.struct
-		- nil struct
-		- embeding
 	12.functions
 		- func keyword
 		- multiple return values
@@ -57,14 +55,17 @@
 		- function literals
 		- function types
 		- closures
-	13.reflections
-	14.interfaces
+		- error handling
+			- fmt.Errorf
+			- errors
+	13.interfaces
 		- empty interface
 		- interface embeding
-	15.methods
+	14.methods
 		- method set
 		- value reciever
 		- pointer receiver
+	15.reflections
 	16.concurrancy
 		- goroutinue
 		- channel
@@ -72,13 +73,22 @@
 			- close channel
 		- select
 		- sync/WaitGroup
-
--Advanced
-	17.net package
+	17.Tools
+		- go
+		- goimports
+		- godoc
+		- oracle
+		- testing
+		- bechmarking
+		- profiling
+		- race detector
+-Standard Library
+	18.os
+	19.io
+	20.flags
+	21.log
+	22.net
 		- rpc
 		- http
-	18. godoc
-	19. testing
-	20. bechmarking
-	21. profiling
-	22. race detector
+	23.database/sql
+
