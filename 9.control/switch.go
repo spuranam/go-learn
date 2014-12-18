@@ -29,7 +29,6 @@ func main() {
 
 	// seed the random number generator
 	rand.Seed(int64(time.Now().Nanosecond()))
-
 	// generate a random number between 1 and 100
 	rnum := rand.Intn(100)
 
@@ -40,7 +39,7 @@ func main() {
 		fmt.Printf("Number %d is odd\n", rnum)
 	}
 
-	// multiple options in case
+	// cases can be composed of compound statements
 	switch {
 	case rnum%2 == 0 && rnum%4 == 0:
 		fmt.Printf("The number %d is divisible by 2 and 4\n", rnum)
@@ -68,6 +67,8 @@ func main() {
 	// Sometimes, though, it's necessary to break out of a surrounding loop,
 	// not the switch, and in Go that can be accomplished by putting a label
 	// on the loop and "breaking" to that label. This example shows both uses.
+	// addtionally this example also shows that cases can evaluate multiple
+	// values at once
 LOOP:
 	for i := 0; i < 10; i++ {
 		switch i {
