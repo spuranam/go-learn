@@ -42,7 +42,7 @@
 		- embeding
 	10.pointers
 	11.Control structures
-		- if, if-then-else
+		- if, if-else if-else
 		- switch
 		- defer
 		- for
