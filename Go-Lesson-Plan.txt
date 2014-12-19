@@ -46,11 +46,9 @@
 		- func keyword
 		- multiple return values
 		- variadic paramters
-		- function literals
-		- function types
-		- anonymous functions
 		- recursive functions
-		- closures
+		- anonymous functions (closure, literal)
+		- function types
 		- error handling
 			- fmt.Errorf
 			- errors
