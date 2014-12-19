@@ -10,8 +10,8 @@ func main() {
 	num := 16.0
 	upperBound := 10.0
 
-	// The syntax is also slightly different: there are no parentheses and
-	// the bodies must always be brace-delimited.
+	// The syntax is slightly different from languages like perl, c or java there are 
+	// no parentheses and the bodies must always be brace-delimited.
 	if num > upperBound {
 		fmt.Printf("number is %f\n", num)
 	}
