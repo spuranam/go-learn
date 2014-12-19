@@ -7,7 +7,7 @@ The lessons are broken into serveral sections. Each section offers details about
     -- Get all the material
     git clone https://github.com/spuranam/go-learn
     or
-    https://github.com/spuranam/go-learn/archive/master.zip
+    [download the zip archive] (https://github.com/spuranam/go-learn/archive/master.zip)
 
 ## Running the code examples
 
