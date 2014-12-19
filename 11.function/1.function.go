@@ -25,8 +25,8 @@ func main() {
 
 	// You invoke the function by specifying the name of the package it defined in
 	// followed by a . (dot) followed by the name of the function and any parameters.
-	// However if the function is defined in the current package then you directly
-	// invoke the function by refer to its name and providing the any parameters
+	// However if the function is defined in the current package then it can
+	// invoked by referring to its name and providing the any parameters
 	Greet()
 
 	x, y := 1, 2
