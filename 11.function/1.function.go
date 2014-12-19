@@ -111,8 +111,7 @@ func sum(title string, nums ...int) string {
 	return fmt.Sprintf("%s %d\n", title, s)
 }
 
-// A function that calls itself in the body of the function are called as recursive
-// functions. Go has first class support for recursive functions
+// A function that calls itself in the body of the function is called a recursive function.
 func fibonacci(num int) int {
 	if num == 0 {
 		return 0
