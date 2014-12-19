@@ -112,10 +112,11 @@ func main() {
 	c1 := car{model: "Escape", make: "Ford"}
 	fmt.Printf("%#v (%T)\n", c1, c1)
 
-	// pointer is type, whose value refers directly to (or "points to") another value stored
-	// elsewhere in the computer memory using its address
+	// pointers value refers directly to (or "points to") another value
+	// stored elsewhere in the computer memory using its address
 	// To get the address of a value use address-of operator "&".
-	// NOTE that the value of an uninitialized pointer is nil.
+	// NOTE: Value of an uninitialized pointer is nil.
+	// NOTE: Go does not support pointer arithmatic like C or C++
 	cp := &c1
 	fmt.Printf("%#v (%T)\n", cp, cp)
 
@@ -151,10 +152,10 @@ func main() {
 	// called the key type. The value of an uninitialized map is nil.
 	// The key can be of any type for which the equality operator is defined,
 	// such as integers, floating point and complex numbers, strings, pointers,
-	// interfaces (as long as the dynamic type supports equality), structs 
-	// and arrays. Slices cannot be used as map keys, because equality is 
+	// interfaces (as long as the dynamic type supports equality), structs
+	// and arrays. Slices cannot be used as map keys, because equality is
 	// not defined on them. Like slices, maps hold references to an underlying
-	// data structure. 
+	// data structure.
 
 	unitPrice := make(map[string]float64)
 	unitPrice["egg"] = 10.20
