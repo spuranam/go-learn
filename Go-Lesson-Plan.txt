@@ -1,54 +1,48 @@
 -Basic
-	1.Enviroment variables
-		- GOPATH
-		- GOROOT
-		- GOBIN
-		- GOOS
-		- GOARCH
-	2.packages
+	1.packages
 		- import keyword
 		- _ underscore
 		- . dot
 		- alias
-	3.variables
+	2.variables
 		- var keyword
 		- short hand
 		- visibility rules
-	4.constants
+	3.constants
 		- cont keyword
-	5.data types
+	4.data types
 		- basic types
 		- zero value
 		- type conversion
 		- type assertion
 		- type switch
-	6.arrays
+	5.arrays
 		-literal syntax
 		-len
 		-... shorthand
-	7.slice
+	6.slice
 		-literal syntax
 		-len
 		-cap
 		-make
 		-append
 		-copy
-	8.map
+	7.map
 		-make
 		-delete
 		-comma ok idiom
-	9.struct
+	8.struct
 		- nil struct
 		- embeding
-	10.pointers
-	11.Control structures
+	9.pointers
+	10.Control structures
 		- if, if-else if-else
 		- switch
 		- defer
 		- for
 		- for range
 		- beark, continue
-	12.functions
+	11.functions
 		- func keyword
 		- multiple return values
 		- variadic paramters
@@ -60,22 +54,22 @@
 		- error handling
 			- fmt.Errorf
 			- errors
-	13.interfaces
+	12.interfaces
 		- empty interface
 		- interface embeding
-	14.methods
+	13.methods
 		- method set
 		- value reciever
 		- pointer receiver
-	15.reflections
-	16.concurrancy
+	14.reflections
+	15.concurrancy
 		- goroutinue
 		- channel
 			- nil channel
 			- close channel
 		- select
 		- sync/WaitGroup
-	17.Tools
+	16.Tools
 		- go
 		- goimports
 		- godoc
@@ -85,12 +79,18 @@
 		- profiling
 		- race detector
 -Standard Library
-	18.os
-	19.io
-	20.flags
-	21.log
-	22.net
+	17.os
+	18.io
+	19.flags
+	20.log
+	21.net
 		- rpc
 		- http
-	23.database/sql
+	22.database/sql
+-Enviroment variables
+	- GOPATH
+	- GOROOT
+	- GOBIN
+	- GOOS
+	- GOARCH
 
