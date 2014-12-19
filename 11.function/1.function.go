@@ -71,8 +71,8 @@ func main() {
 	}
 	fmt.Printf("%d * %d = %d\n", x, y, prod(x, y))
 
-	// To directly invoke an anonymous function, put pair of () within which
-	// we can list the optional parameters to the function.
+	// To directly invoke an anonymous function, put pair of () after the closing
+	// '}' brackets within which we can list the optional parameters to the function.
 	func(x, y int) {
 		fmt.Printf("%d %% %d = %d\n", x, y, x%y)
 	}(4, 2) // 4,2 are the parameters to the anonymous function
