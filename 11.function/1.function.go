@@ -56,6 +56,9 @@ func main() {
 	// n... is the shorthand to send
 	s := sum("Sum of input number is:", n...)
 	fmt.Printf("%s", s)
+
+	// call recursive function
+	fmt.Printf("Fibonacci of 10 is %d\n", fibonacci(10))
 }
 
 // The keyword func introduces a function
@@ -106,4 +109,16 @@ func sum(title string, nums ...int) string {
 		s += v
 	}
 	return fmt.Sprintf("%s %d\n", title, s)
+}
+
+// A function that calls itself in the body of the function are called as recursive
+// functions. Go has first class support for recursive functions
+func fibonacci(num int) int {
+	if num == 0 {
+		return 0
+	} else if num == 1 {
+		return 1
+	}
+
+	return fibonacci(num-1) + fibonacci(num-2)
 }
