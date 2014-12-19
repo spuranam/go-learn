@@ -21,7 +21,7 @@ func main() {
 	// uncomment the following line to see the error in action
 	//numbers[3] = 98
 
-	// array elemnts are zeroed .i.e. the elements that are not assigned a value,
+	// array elements are zeroed .i.e. the elements that are not assigned a value,
 	// will intialized to their respective types zero value. For example in
 	// case of numbers array the value of third (3) element would set to zero (0)
 	fmt.Printf("numbers = %#v\n", numbers)
