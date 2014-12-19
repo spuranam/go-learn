@@ -59,6 +59,23 @@ func main() {
 
 	// call recursive function
 	fmt.Printf("Fibonacci of 10 is %d\n", fibonacci(10))
+
+	// A function that does have a name is called anonymous function
+	// (also known under the names of a lambda function, a function literal, or a closure).
+	// Such a function cannot stand on its own, since complier would throw an error.
+	// Hence they must be either assigned to variable or must be directly invoked.
+
+	// The variable prod's value is a function that returns product of the passed numbers
+	prod := func(x, y int) int {
+		return x * y
+	}
+	fmt.Printf("%d * %d = %d\n", x, y, prod(x, y))
+
+	// To directly invoke an anonymous function, put pair of () within which
+	// we can list the optional parameters to the function.
+	func(x, y int) {
+		fmt.Printf("%d %% %d = %d\n", x, y, x%y)
+	}(4, 2) // 4,2 are the parameters to the anonymous function
 }
 
 // The keyword func introduces a function
