@@ -54,6 +54,8 @@
 		- variadic paramters
 		- function literals
 		- function types
+		- anonymous functions
+		- recursive functions
 		- closures
 		- error handling
 			- fmt.Errorf
