@@ -57,8 +57,8 @@ func main() {
 		fmt.Printf("Index=%d Element=%d\n", i, v)
 	}
 
-	// If you do not need to know index, then it can ommited using
-	// _ (underscore) place holder syntax.
+	// If ommit the index, then the blank identifier _ (underscore) can be used
+	// to discard the index
 	for _, v := range a {
 		fmt.Printf("Array element %d\n", v)
 	}
