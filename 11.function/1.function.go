@@ -55,7 +55,7 @@ func main() {
 
 	// For example here the second retured value error is being discarded
 	// NOTE: Its considered bad parctice to ignore errors. Please dont do this in normal code.
-	// The pupose is to demonstrate how to discard one or more returned values.
+	// I am ignoring the error returned only to demonstrate how to discard one or more returned values.
 	q, _ := divide(numr, denom)
 	fmt.Printf("Result of %d / %d is %d\n", numr, denom, q)
 
