@@ -69,4 +69,32 @@ func main() {
 	// dereference the pointer, this happens automatically
 	fmt.Printf("person p3 is %s\n", p3.Name)
 
+	// It is possible to define anonymous structs
+	// It is idiomatic to create a anonymous struct to pass values to the
+	// html or text templates
+	u := struct {
+		Username string
+		Email    string
+		IsActive bool
+	}{"jdoe", "jdoe@example.com", true}
+	fmt.Printf("%#v\n", u)
+
+	// Set the struct field
+	u.Username = "jadams"
+
+	// Create a slice of anonymous struct
+	// It is idomatic to create a slice of anonymous struct while writting test cases,
+	// such a construction is called as table driven testing in Go
+	users := []struct {
+		Username string
+		Email    string
+		IsActive bool
+	}{
+		{"jane.doe", "jdoe@example.com", false},
+		{"marry.jane", "mjane@example.com", true},
+	}
+	fmt.Printf("%v\n", users)
+
+	// Set the struct field
+	users[0].Email = "noemail@example.com"
 }
