@@ -49,7 +49,7 @@ func main() {
 		fmt.Printf("I do know what to do with %d\n", rnum)
 	}
 
-	// if want switch continue evalution after the first match you
+	// if want switch to continue evalution after the first match you
 	// do so with fallthrough statement.
 	// NOTE: you can not fallthrough the final case in switch
 	switch {
