@@ -119,10 +119,9 @@ func divide(x, y int) (int, error) {
 	return x / y, nil
 }
 
-// A go function can accept arbitary number of values for a paramater.
-// Such functions are called as variadic functions. A variadic parameter
-// has ... prefixed to its type.
-// There can only be one such parameter. If a function happens to take
+// A function parameter can accept arbitary number of values. Such functions are
+// called as variadic functions. A variadic parameter is prefixed by ... (three asterisks)
+// to its type. There can only be one such parameter. If a function happens to take
 // more than one parameter, then the parameter that accepts multiple values
 // must be the last one. The following example show one such function.
 // The value of the variadic parameter is accessible as a slice within the
