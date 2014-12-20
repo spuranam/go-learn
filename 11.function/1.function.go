@@ -113,6 +113,7 @@ var ErrDivideByZero = errors.New("Division by zero is not allowed")
 
 // A function can return one or more values. This forms very foundations of Go's error
 // handling machinary, since unlike other languages go does not support exception handling
+// NOTE: If you have more than one returned value then they must enclosed in set of parens
 func divide(x, y int) (int, error) {
 	if y == 0 {
 		return 0, ErrDivideByZero
@@ -145,4 +146,15 @@ func fibonacci(num int) int {
 	}
 
 	return fibonacci(num-1) + fibonacci(num-2)
+}
+
+// A function can have named return values, in which case you can named naked retrun
+// statement. The last computed value of the variable would be retuned when the
+// function exits
+func IsEven(n int) (result bool) {
+	result = false
+	if n%2 == 0 {
+		result = true
+	}
+	return
 }
