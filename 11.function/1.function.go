@@ -28,7 +28,7 @@ func main() {
 	// and any parameters within a set of parantheses.
 	// However if the function is defined in the current package then it can
 	// be invoked by referring to its name and providing the values for
-	// all the defined parameters, if any.
+	// all defined parameters, if any.
 	Greet()
 
 	x, y := 1, 2
