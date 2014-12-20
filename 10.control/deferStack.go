@@ -8,7 +8,7 @@ package main
 import "fmt"
 
 func main() {
-	// defers can stacked, each defer would be called when the function exits
+	// defers can be stacked, each defer would be called when the function exits
 	// in LIFO (last-in-first-out) order
 	for i := 0; i < 10; i++ {
 		defer fmt.Printf("Calling defered statement %d\n", i)
