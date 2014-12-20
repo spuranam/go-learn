@@ -5,10 +5,9 @@ import (
 	"fmt"
 )
 
-// Functions main purpose is to break a large program which requires many code
-// lines into a number of smaller tasks (functions). It also helps enforce the D-R-Y
-// (dont repeat yourself) principle, the same task can be invoked several times,
-// so a function promotes code reuse.
+// Functions main purpose is to break a large program into a number of smaller
+// tasks (functions). It also helps enforce the D-R-Y (dont repeat yourself)
+// principle, the same task can be invoked several times, so a function promotes code reuse.
 
 // There are 3 types of functions in Go:
 // - Normal functions with an identifier
