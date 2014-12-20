@@ -35,6 +35,7 @@ func main() {
 	priceList["milk"] = 2.45
 	fmt.Printf("%#v\n", priceList)
 
+	// distance from in astronomical units
 	distanceFromSun := map[string]float64{
 		"Mercury": 0.387,
 		"Venus":   0.722,
