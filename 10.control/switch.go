@@ -25,14 +25,14 @@ func main() {
 	}
 
 	// switch with condition and a statement
-	// NOTE the scope of variable ov is limited to the switch block
+	// NOTE the scope of variable oe is limited to the switch block
 
 	// seed the random number generator
 	rand.Seed(int64(time.Now().Nanosecond()))
 	// generate a random number between 1 and 100
 	rnum := rand.Intn(100)
 
-	switch ov := rnum % 2; ov {
+	switch oe := rnum % 2; oe {
 	case 0:
 		fmt.Printf("Number %d is even\n", rnum)
 	case 1:
