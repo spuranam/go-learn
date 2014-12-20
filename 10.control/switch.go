@@ -45,8 +45,6 @@ func main() {
 		fmt.Printf("The number %d is divisible by 2 and 4\n", rnum)
 	case rnum%2 == 0 || rnum%4 == 0:
 		fmt.Printf("The number is %d is not divisible by both 2 and 4\n", rnum)
-	default:
-		fmt.Printf("I do know what to do with %d\n", rnum)
 	}
 
 	// if want switch to continue evalution after the first match you
@@ -54,13 +52,13 @@ func main() {
 	// NOTE: you can not fallthrough the final case in switch
 	switch {
 	case rnum%2 == 0 && rnum%4 == 0:
-		fmt.Printf("The number %d is divisible by 2 and 4\n", rnum)
+		fmt.Printf("Fallthrough: The number %d is divisible by 2 and 4\n", rnum)
 		fallthrough
 	case rnum%3 == 0:
-		fmt.Printf("The number is %d is divisible by 3\n", rnum)
+		fmt.Printf("Fallthrough: The number is %d is divisible by 3\n", rnum)
 		fallthrough
 	default:
-		fmt.Printf("I do know what to do with %d\n", rnum)
+		fmt.Printf("I fellthrough to the default case %d\n", rnum)
 	}
 
 	// A break statement can be used to terminate the switch early
