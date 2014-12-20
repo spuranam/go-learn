@@ -5,9 +5,10 @@ import (
 	"fmt"
 )
 
-// Functions main purpose is to break a large problem which requires many code
-// lines into a number of smaller tasks (functions). Also the same task can be
-// invoked several times, so a function promotes code reuse.
+// Functions main purpose is to break a large program which requires many code
+// lines into a number of smaller tasks (functions). It also helps enforce the D-R-Y
+// (dont repeat yourself) principle, the same task can be invoked several times,
+// so a function promotes code reuse.
 
 // There are 3 types of functions in Go:
 // - Normal functions with an identifier
@@ -23,14 +24,15 @@ import (
 
 func main() {
 
-	// You invoke the function by specifying the name of the package it defined in
-	// followed by a . (dot) followed by the name of the function and any parameters.
+	// You invoke the function by specifying the name of the package it is
+	// defined in followed by a . (dot) followed by the name of the function
+	// and any parameters within a set of parantheses.
 	// However if the function is defined in the current package then it can
 	// invoked by referring to its name and providing the any parameters
 	Greet()
 
 	x, y := 1, 2
-	// You can capture the returned value either assigning to a variable or
+	// You can capture the returned value either assigning it to a variable or
 	// passing it as argument to another function
 	r := add(x, y)
 	fmt.Printf("The sum of %d and %d is %d\n", x, y, r)
@@ -66,7 +68,7 @@ func main() {
 	// call recursive function
 	fmt.Printf("Fibonacci of 10 is %d\n", fibonacci(10))
 
-	// A function that does have a name is called anonymous function
+	// A function that does not have a name is called anonymous function
 	// (also known under the names of a lambda function, a function literal, or a closure).
 	// Such a function cannot stand on its own, since complier would throw an error.
 	// Hence such functions  must be either assigned to variable or must be
@@ -92,10 +94,10 @@ func main() {
 // A function can take other function as paramters or return functions as return values
 // A function which starts with capital/uppercase letter is exported (visible/accessible to other packages)
 // The order in which functions are defined in go source file is of no
-// consequence, however its idiomatic to define the main function as first function.
+// consequence, however it is idiomatic to define the main function as first function.
 
 // Greet is a function that take no paraters and returns no values. Notice this
-// function start with capital letter hence it is said to a exported function.
+// function start with capital letter hence it is said to be a exported function.
 func Greet() {
 	fmt.Printf("Hello how are you?\n")
 }
