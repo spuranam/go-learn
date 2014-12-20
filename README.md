@@ -17,10 +17,13 @@ or
 **_Build & Run sample_**
 
 Complie go source file and generate the binary
+
 	go build name_of_program
 
 Complie go source file, execute it send the output if any to stdout and throw away the generated binary
+
 	go run name_of_program
 
  Compile go source file, and install it in bin subdirectory of your GOPATH
+ 
 	go install name_of_program
