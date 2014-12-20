@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	// The type *T is a pointer to a T value. Its zero value is nil.
-	// pointer's value refers directly to (or "points to") another value
+	// The type *T is a pointer to value T. Its zero value is nil.
+	// Pointer's value refers directly to (or "points to") another value
 	// stored elsewhere in the computer memory using its address.
 	// NOTE: Value of an uninitialized pointer is nil.
 	// NOTE: Go does not support pointer arithmatic like C or C++
@@ -19,12 +19,12 @@ func main() {
 	// to see this in action uncomment the next line
 	//*p = 24
 
-	// its easy to check if pointer is nil
+	// It is easy to check if the pointers value is nil
 	if p == nil {
 		fmt.Printf("p is a nil pointer\n")
 	}
 
-	p = new(int) // p is initailized to zero value of int, 0 (zero)
+	p = new(int) // p is initialized to zero value of int, 0 (zero)
 	fmt.Printf("%#v\n", *p)
 	*p = 24 // set p
 	fmt.Printf("%#v\n", *p)
@@ -41,13 +41,13 @@ func main() {
 	*np = "John Doe" //set n through pointer np
 	fmt.Printf("%s\n", n)
 
-	// In practice its very rare that you want to use pointers to primitive  types.
-	// The values of referrence type consists of header which contains
+	// In practice it is very rare that you want to use a pointer to primitive types.
+	// The values of reference type consists of header which contains
 	// a referrence to data structure and other meta data. These types are
-	// designed to be shared, when you pass the reference types to functions
-	// only the a copy of the headers is passed to the function not the underlying
+	// designed to be shared, when you pass a reference type to function
+	// only the a copy of the header is passed to the function not the underlying
 	// data structure, hence there is no benifit use or create a pointer to
-	// values of referrence type.
+	// values of reference type.
 
 	// More often pointers to a value of struct type are created and passed
 	// to function to mutate their state.
@@ -67,7 +67,7 @@ func main() {
 	fmt.Printf("pToArray = %v (%T)\n", pToArray, pToArray)
 	fmt.Printf("ArrayOfP = %v (%T)\n", ArrayOfP, ArrayOfP) // we get memory address
 	for i := 0; i < len(ArrayOfP); i++ {
-		// by derefrencing the each element we can read the value stored
+		// by dereferencing the each element we can read the value stored
 		fmt.Printf("Elements of ArrayOfP = %v (%T)\n", *ArrayOfP[i], *ArrayOfP[i])
 	}
 }
