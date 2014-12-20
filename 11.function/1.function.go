@@ -148,9 +148,9 @@ func fibonacci(num int) int {
 	return fibonacci(num-1) + fibonacci(num-2)
 }
 
-// A function can have named return values, in which case you can named naked retrun
-// statement. The last computed value of the variable would be retuned when the
-// function exits
+// A function can have named return values, in which case you can assign name to
+// the returned types and have naked retrun statement. The last computed value
+// of the variable would be retuned when the function exits
 func IsEven(n int) (result bool) {
 	result = false
 	if n%2 == 0 {
