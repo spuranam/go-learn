@@ -41,9 +41,16 @@ func main() {
 	*np = "John Doe" //set n through pointer np
 	fmt.Printf("%s\n", n)
 
-	// In practice its very rare that you want to use pointers to primitive
-	// types, or for that matter referrence types.
-	// most often they are used to point to the values of type struct.
+	// In practice its very rare that you want to use pointers to primitive  types.
+	// The values of referrence type consists of header which contains
+	// a referrence to data structure and other meta data. These types are
+	// designed to be shared, when you pass the reference types to functions
+	// only the a copy of the headers is passed to the function not the underlying
+	// data structure, hence there is no benifit use or create a pointer to
+	// values of referrence type.
+
+	// More often pointers to a value of struct type are created and passed
+	// to function to mutate their state.
 	// For more detailed discussion see this excellent blog post:
 	// http://www.goinggo.net/2014/12/using-pointers-in-go.html
 
