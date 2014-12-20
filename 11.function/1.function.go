@@ -43,11 +43,17 @@ func main() {
 		fmt.Printf("Result of %d / %d is %d\n", numr, denom, quot)
 	}
 
-	// One or more returned values can be omitted using the blank identifier _ (underscore)
+	// One or more returned values can be discarded using the blank identifier _ (underscore)
+
+	// When would this be useful?
+	// Recall that its illegal to declare a variable and not use it. Now suppose
+	// you have function that you wrote or calling a function defined in some
+	// package, but you do not want to consume one or more returned values.
+	// The only way out is to this is to use the blank indentifier.
+
 	// For example here the second retured value error is being discarded
 	// NOTE: Its considered bad parctice to ignore errors. Please dont do this in normal code.
-	// The pupose is to demonstrate that you can discard one or more returned
-	// values if you please to do so.
+	// The pupose is to demonstrate how to discard one or more returned values.
 	q, _ := divide(numr, denom)
 	fmt.Printf("Result of %d / %d is %d\n", numr, denom, q)
 
