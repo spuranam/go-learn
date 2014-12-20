@@ -34,6 +34,7 @@
 	8.struct
 		- nil struct
 		- embeding
+		- anonymous struct
 	9.pointers
 	10.Control structures
 		- if, if-else if-else
