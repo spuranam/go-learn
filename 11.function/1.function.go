@@ -63,7 +63,8 @@ func main() {
 	// A function that does have a name is called anonymous function
 	// (also known under the names of a lambda function, a function literal, or a closure).
 	// Such a function cannot stand on its own, since complier would throw an error.
-	// Hence they must be either assigned to variable or must be directly invoked.
+	// Hence such functions  must be either assigned to variable or must be
+	// directly invoked or returned as output value of a named function
 
 	// The variable prod's value is a function that returns product of the passed numbers
 	prod := func(x, y int) int {
@@ -84,8 +85,8 @@ func main() {
 // A function can return zero or more values, unlike other languages
 // A function can take other function as paramters or return functions as return values
 // A function which starts with capital/uppercase letter is exported (visible/accessible to other packages)
-// The order of function definition is of no consequnce, however its idiomatic
-// to define the main function as first function.
+// The order in which functions are defined in go source file is of no
+// consequence, however its idiomatic to define the main function as first function.
 
 // Greet is a function that take no paraters and returns no values. Notice this
 // function start with capital letter hence it is said to a exported function.
