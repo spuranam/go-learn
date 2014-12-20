@@ -27,7 +27,8 @@ func main() {
 	// defined in followed by a . (dot) followed by the name of the function
 	// and any parameters within a set of parantheses.
 	// However if the function is defined in the current package then it can
-	// invoked by referring to its name and providing the any parameters
+	// be invoked by referring to its name and providing the values for
+	// all the defined parameters, if any.
 	Greet()
 
 	x, y := 1, 2
