@@ -110,7 +110,7 @@ func add(x, y int) int {
 
 var ErrDivideByZero = errors.New("Division by zero is not allowed")
 
-// A function can return one or more values. This forms very foundations of Go error
+// A function can return one or more values. This forms very foundations of Go's error
 // handling machinary, since unlike other language go does not support exception handling
 func divide(x, y int) (int, error) {
 	if y == 0 {
