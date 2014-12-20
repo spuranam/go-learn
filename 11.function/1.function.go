@@ -61,7 +61,7 @@ func main() {
 
 	// call the variadic function sum
 	n := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	// n... is the shorthand to send
+	// n... is the shorthand to pass each element of the slice to the function
 	s := sum("Sum of input number is:", n...)
 	fmt.Printf("%s", s)
 
