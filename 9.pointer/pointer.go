@@ -14,7 +14,7 @@ func main() {
 	var p *int             //declares a pointer to an int
 	fmt.Printf("%#v\n", p) // p is unintialized (no memory has been allocated) hence its value is nil.
 
-	// Trying derefernce a nil pointer will lead to run-time error and
+	// Trying dereference a nil pointer will lead to run-time error and
 	// your program will crash.
 	// to see this in action uncomment the next line
 	//*p = 24
