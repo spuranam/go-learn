@@ -66,7 +66,7 @@ func main() {
 	fmt.Printf("pToArray = %v (%T)\n", pToArray, pToArray)
 	fmt.Printf("ArrayOfP = %v (%T)\n", ArrayOfP, ArrayOfP) // we get memory address
 	for i := 0; i < len(ArrayOfP); i++ {
-		// by dereferencing the each element we can read the value stored
+		// by dereferencing each element we can read the value stored
 		fmt.Printf("Elements of ArrayOfP = %v (%T)\n", *ArrayOfP[i], *ArrayOfP[i])
 	}
 }
