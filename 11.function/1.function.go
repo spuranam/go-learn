@@ -92,7 +92,7 @@ func main() {
 // One of the functions parameters can accept arbitary number of values
 // A function can return zero or more values, unlike other languages
 // A function can take other function as paramters or return functions as return values
-// A function which starts with capital/uppercase letter is exported (visible/accessible to other packages)
+// A function which starts with capital/uppercase letter is exported (visible/accessible from other packages)
 // The order in which functions are defined in go source file is of no
 // consequence, however it is idiomatic to define the main function as first function.
 
