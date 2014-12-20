@@ -57,7 +57,7 @@ func main() {
 		fmt.Printf("The number %d is divisible by 2 and 4\n", rnum)
 		fallthrough
 	case rnum%3 == 0:
-		fmt.Printf("The number is %d is divisible by both 3\n", rnum)
+		fmt.Printf("The number is %d is divisible by 3\n", rnum)
 		fallthrough
 	default:
 		fmt.Printf("I do know what to do with %d\n", rnum)
