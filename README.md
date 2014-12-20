@@ -2,6 +2,13 @@
 
 The lessons are broken into serveral sections. Each section offers details about the specific topic under discussion.
 
+## Attributions
+
+Some of the details have been shamelessly copied from:
+- [Effective Go] (http://golang.org/doc/effective_go.html)
+- [The Go Programming Language Specification] (http://golang.org/ref/spec)
+- [The Go Blog] (http://blog.golang.org)
+
 ## Getting the Material
 
 	git clone https://github.com/spuranam/go-learn
