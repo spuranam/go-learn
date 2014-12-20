@@ -42,7 +42,7 @@ func main() {
 		"Earth":   1.00,
 		"Mars":    1.52,
 	}
-	fmt.Printf("%#v\n", distanceFromSun)
+	fmt.Printf("Distance from sun in (AU) %#v\n", distanceFromSun)
 
 	// delete built in function can be used delete the items froms the map
 	fmt.Printf("Before Delete, %#v\n", priceList)
