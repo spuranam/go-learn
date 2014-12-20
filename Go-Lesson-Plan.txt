@@ -46,6 +46,7 @@
 	11.functions
 		- func keyword
 		- multiple return values
+		- named return
 		- variadic paramters
 		- recursive functions
 		- anonymous functions (closure, literal)
