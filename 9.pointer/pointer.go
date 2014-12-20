@@ -11,8 +11,8 @@ func main() {
 
 	// In Go a pointer is represented using the * (asterisk) character
 	// followed by the type of the stored value
-	var p *int
-	fmt.Printf("%#v\n", p) // p is unintialized hence its value is nil
+	var p *int             //declares a pointer to an int
+	fmt.Printf("%#v\n", p) // p is unintialized (no memory has been allocated) hence its value is nil.
 
 	// Trying derefernce a nil pointer will lead to run-time error and
 	// your program will crash.
@@ -23,6 +23,11 @@ func main() {
 	if p == nil {
 		fmt.Printf("p is a nil pointer\n")
 	}
+
+	p = new(int) // p is initailized to zero value of int, 0 (zero)
+	fmt.Printf("%#v\n", *p)
+	*p = 24 // set p
+	fmt.Printf("%#v\n", *p)
 
 	n := "Marry Jane"
 	// To get pointer to a value use address-of operator "&"
