@@ -6,8 +6,8 @@ func main() {
 	// The type *T is a pointer to value T. Its zero value is nil.
 	// Pointer's value refers directly to (or "points to") another value
 	// stored elsewhere in the computer memory using its address.
-	// NOTE: Value of an uninitialized pointer is nil.
-	// NOTE: Go does not support pointer arithmatic like C or C++
+	// NOTE: value of an uninitialized pointer is nil.
+	// NOTE: Go does not support pointer arithmetic like C or C++
 
 	// In Go a pointer is represented using the * (asterisk) character
 	// followed by the type of the stored value
