@@ -47,4 +47,20 @@ func main() {
 	// For more detailed discussion see this excellent blog post:
 	// http://www.goinggo.net/2014/12/using-pointers-in-go.html
 
+	// Array and Pointers
+	var pToArray *[2]int // declare a pointer to an array of two int
+	var ArrayOfP [2]*int // declare an array of two pointers to int
+
+	pToArray = new([2]int)
+	for i := 0; i < 2; i++ {
+		ArrayOfP[i] = new(int)
+		*ArrayOfP[i] = i * 2
+		(*pToArray)[i] = i + 2
+	}
+	fmt.Printf("pToArray = %v (%T)\n", pToArray, pToArray)
+	fmt.Printf("ArrayOfP = %v (%T)\n", ArrayOfP, ArrayOfP) // we get memory address
+	for i := 0; i < len(ArrayOfP); i++ {
+		// by derefrencing the each element we can read the value stored
+		fmt.Printf("Elements of ArrayOfP = %v (%T)\n", *ArrayOfP[i], *ArrayOfP[i])
+	}
 }
