@@ -152,6 +152,8 @@ func fibonacci(num int) int {
 // the returned types and have naked retrun statement. The last computed value
 // of the variable would be retuned when the function exits
 func IsEven(n int) (result bool) {
+	// Since the dafault value of bool type is false
+	// the following statement is redundant
 	result = false
 	if n%2 == 0 {
 		result = true
