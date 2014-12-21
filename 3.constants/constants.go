@@ -15,7 +15,12 @@ const (
 	daysInWeek = 7
 )
 
-// iota, is handy indetifier every time its value is incremented by 1.
+// Iota is a handy shorthand available in Go that makes defining of enumerated
+// constants easy. Iota value is reset to 0 at every constant declaration
+// (a statement starting with const) and within a constant declaration it is
+// incremented after each line(ConstSpec). If you use iota in different
+// expressions in the same line they will all get the same iota value.
+
 // here is an example from time standard package
 const (
 	January = 1 + iota
