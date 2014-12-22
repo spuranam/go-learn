@@ -42,7 +42,7 @@ func CreateBinOp(op string) BinOp {
 // function and the function literal, and they survive as long as they are accessible.
 // intSeq returns another function, which we define anonymously in the body of intSeq.
 // The returned function closes over the variable i to form a closure.
-// this example ha been taken verbatim from Go by Example: Closures
+// this example has been taken verbatim from Go by Example: Closures
 func intSeq() func() int {
 	i := 0
 	return func() int { // anonymous function
