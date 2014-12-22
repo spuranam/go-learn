@@ -17,7 +17,7 @@ func main() {
 }
 
 // notice the type of return value of the function CreateBinOp
-// is the same as the type of the binOp, hence we can replace this with BinOp.
+// is the same as the type of the BinOp, hence we can replace this with BinOp.
 // Hence line 17 is equivalent to line 16
 //func CreateBinOp(op string) func(x, y int) int {
 func CreateBinOp(op string) BinOp {
