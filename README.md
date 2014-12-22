@@ -44,3 +44,7 @@ Complie go source file, execute it send the output if any to stdout and throw aw
 **Running on go playground**
 
 To run these samples on [Go playground, paste the code here] (http://play.golang.org)
+Please note that go playground is sandboxed environment, with following limitations:
+ - Time is constant, i.e. it does not change
+ - No filesystem i.e. you do not have access to the filesystem
+ - No network .i.e. you can not run an code that imports net package
