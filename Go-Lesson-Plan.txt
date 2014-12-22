@@ -36,6 +36,10 @@
 		- embeding
 		- anonymous struct
 	9.pointers
+		- nil pointer
+		- address of operator
+		- dereferencing
+		- array and pointers
 	10.Control structures
 		- if, if-else if-else
 		- switch
