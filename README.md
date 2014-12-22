@@ -40,3 +40,7 @@ Complie go source file, execute it send the output if any to stdout and throw aw
  Compile go source file, and install it in bin subdirectory of your GOPATH
  
 	go install name_of_program
+
+**Running on go playground**
+
+To run these samples on [Go playground, paste the code here] (http://play.golang.org)
