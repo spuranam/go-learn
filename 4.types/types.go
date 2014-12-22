@@ -122,6 +122,9 @@ func main() {
 
 	// function type denotes the set of all function with same paramter and result type
 	// functions are declared using the "func" keyword
+	// attribution:
+	// the following example is slightly modified reproduction of:
+	// http://jordanorelli.com/post/42369331748/function-types-in-go-golang
 	type binFunc func(x, y int) int
 
 	// seed the random number generator
