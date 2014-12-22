@@ -48,3 +48,5 @@ Please note that go playground is sandboxed environment, with following limitati
  - Time is constant, i.e. it does not change
  - No filesystem i.e. you do not have access to the filesystem
  - No network .i.e. you can not run an code that imports net package
+
+However the playground allows you get started with the business of learning the lanaguage ASAP, with getting bogged down in setting up the development/learning environment.
