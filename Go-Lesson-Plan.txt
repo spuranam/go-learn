@@ -59,6 +59,8 @@
 		- method set
 		- value reciever
 		- pointer receiver
+		- dynamic dispatch
+		- object oriented programing
 	14.reflections
 	15.concurrancy
 		- goroutinue
