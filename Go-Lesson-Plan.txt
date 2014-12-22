@@ -49,6 +49,7 @@
 		- beark, continue
 	11.functions
 		- func keyword
+		- function signature
 		- multiple return values
 		- named return
 		- variadic paramters
