@@ -2,12 +2,19 @@ package main
 
 import "fmt"
 
-// declare a variable, notice the use of "var" keyword
-// un-initialized variable "City" is initialized to the zero value, 
-// in this case an empty string indentifiers that start with uppercase
-// letter are exported .i.e. they are visible outside the package they 
-// are defined. addtionally the type of variable appears after the 
-// name, unlike Java, C, or C++
+// A variable is a storage location, with a specific type and an associated name.
+// Names must start with a letter and may contain letters, numbers or the _ (underscore) symbol.
+// "var" keyword declare a variable.
+
+// Addtionally the type of variable appears after the name, unlike Java, C, or C++
+
+// variable scope
+// variables defined outside of the function are accessible to other functions. For example
+// the variable name defined inside the main function will not available in other
+// functions. Whereas the variable Car will be.
+
+// Varirable whoes name start with uppercase (capital) letter, are exported 
+// .i.e. they are visible outside the package they are defined in.
 
 // NOTE: Its complie time error to define a variable and not use it
 var City string
@@ -16,7 +23,7 @@ var a int
 var c float64
 var d bool
 
-// you can group several variable, saves you from the repeating the "var" keyword
+// Go has a shorthand when you have to define many variables
 var (
 	e    int64
 	f, g uint32
@@ -32,7 +39,7 @@ func main() {
 	fmt.Printf("City=%T age=%T height=%T hairColor=%T hasCar=%T\n", City, age, height, hairColor, hasCar)
 	fmt.Printf("a=%#v b=%#v c=%#v d=%#v e=%#v f=%#v g=%#v\n", a, b, c, d, e, f, g)
 
-	// this short hand for declaring and initializng the variable is only available within
+	// this shorthand for declaring and initializng the variable is only available within
 	// function bodies
 	name := "Penguin"
 	canFly, avgLifespan := false, 15

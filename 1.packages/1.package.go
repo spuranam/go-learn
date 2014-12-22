@@ -7,8 +7,9 @@
 // to this to use _ (underscore) import statement. see sample se.go for details.
 package main
 
-import "./calc"
-import "fmt"
+// Import declaration declares library packages referenced in this file.
+import "./calc" // a user defined package
+import "fmt" // A package in the Go standard library.
 
 func main() {
 	x, y := 6, 3

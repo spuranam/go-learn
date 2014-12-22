@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// constants are defined using the keyword "const".
+// Constants are basically variables whose values cannot be changed later. 
+// Constants are defined using the keyword "const".
 // note that unlike variable, constants can not be defined ussing the
 // shorthand ":=".
 
