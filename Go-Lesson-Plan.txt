@@ -51,9 +51,6 @@
 		- recursive functions
 		- anonymous functions (closure, literal)
 		- function types
-		- error handling
-			- fmt.Errorf
-			- errors
 	12.interfaces
 		- empty interface
 		- interface embeding
