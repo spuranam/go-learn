@@ -15,7 +15,7 @@ type greetings string
 // user defined types.
 // The collection of all the methods on a given type T (or *T) is called the method set of T (or *T)
 
-// greet is method that can be called on instances of the type greetings
+// greet is a method that can be called on instances of the type greetings
 func (g greetings) greet() {
 	fmt.Printf("%s\n", string(g))
 }
