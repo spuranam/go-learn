@@ -56,14 +56,14 @@
 		- recursive functions
 		- anonymous functions (closure, literal)
 		- function types
-	12.interfaces
-		- empty interface
-		- interface embeding
-		- error interface
-	13.methods
+	12.methods
 		- method set
 		- value reciever
 		- pointer receiver
+	13.interfaces
+		- empty interface
+		- interface embeding
+		- error interface
 		- dynamic dispatch
 		- object oriented programing
 	14.reflections
