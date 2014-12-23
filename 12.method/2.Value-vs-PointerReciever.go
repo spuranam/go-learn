@@ -24,9 +24,9 @@ type automobile struct {
 // in a struct), the language  takes care of the common case of invoking a pointer
 // method on a value by inserting the address operator automatically.
 
-// NOTE: interface methods are not addressable, hence the above exception will not
-// apply if the method(s) of a type satisfy an interface. see the topic intrefaces
-// for more relavent details.
+// NOTE: interface methods and map values are not addressable, hence the above
+// exception will not apply if the method(s) of a type satisfies an interface.
+// see the topic intrefaces for more relavent details.
 
 // The methods start, stop and honk work either way. It only reads a. It does'nt
 // wether it is reading the original value (through a pointer) or a copy of the value
