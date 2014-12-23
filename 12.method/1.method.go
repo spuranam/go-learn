@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// greetings is a user defined type who'es underlying representaion is string.
+// greetings is a user defined type whoes underlying representaion is string.
 // NOTE: greetings and string are of different type, you will have to explicitly
 // convert them.
 type greetings string
