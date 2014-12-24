@@ -7,6 +7,8 @@ package main
 
 // For example the standard library io package defines several interfaces, some
 // of them are defined by embedding other interfaces.
+
+// http://golang.org/src/io/io.go
 type Reader interface {
 	Read(p []byte) (n int, err error)
 }
@@ -28,4 +30,8 @@ type ReadWriteCloser interface {
 	Reader //embedded interface
 	Writer //embedded interface
 	Closer //embedded interface
+}
+
+func main() {
+
 }
