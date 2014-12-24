@@ -47,6 +47,10 @@ type square struct {
 	rectangle //anonymous field (embedding)
 }
 
+type triangle struct {
+	a, b, c float64 //side of a triangle
+}
+
 // The methods area and perimeter on types circle, and rectangle are defined
 // with a value reciever since these methods do not mutate (modify) the state of
 // their respective types.
@@ -104,4 +108,13 @@ func main() {
 	c.enlarge(1.1)
 	fmt.Printf("After enlarge %#v\n", c)
 
+	// declare t if of type interface{}
+	var t interface{}
+	t = triangle{1.0, 2.0, 3.0}
+
+	// we can use type assertion to check at runtime if a type satifies an interface
+	_, ok := t.(shaper)
+	if !ok {
+		fmt.Printf("%#v does not statisfy shaper interface\n", t)
+	}
 }
