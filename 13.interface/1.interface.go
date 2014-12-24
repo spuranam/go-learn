@@ -113,8 +113,7 @@ func main() {
 	t = triangle{1.0, 2.0, 3.0}
 
 	// we can use type assertion to check at runtime if a type satifies an interface
-	_, ok := t.(shaper)
-	if !ok {
+	if _, ok := t.(shaper); !ok {
 		fmt.Printf("%#v does not statisfy shaper interface\n", t)
 	}
 
