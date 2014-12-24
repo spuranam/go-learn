@@ -83,6 +83,6 @@ func main() {
 	// the address operator to the value mustang, hence the following two lines
 	// are equivalent
 	mustang.resetMiles()
-	//(&mustang).resetMiles() // same as previus method call
+	//(&mustang).resetMiles() // same as previous method call
 	fmt.Printf("%s %s has %.2f miles on it\n", mustang.make, mustang.model, mustang.miles)
 }
