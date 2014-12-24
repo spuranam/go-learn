@@ -122,6 +122,17 @@ func main() {
 		fmt.Printf("%#v does not statisfy shaper interface\n", t)
 	}
 
+	var lot shaper
+	lot = &rectangle{89.1, 20.1}
+
+	// Is rectangle a type of lot? We can do this using type assertion
+	if t, ok := lot.(*rectangle); ok {
+		fmt.Printf("The type of lot is: %T\n", t)
+		// its now safe to call, since we aserted that rectangle satisfies
+		// shaper interface
+		fmt.Printf("Area of the lot (%#v) is %.2f\n", t, t.area())
+	}
+
 	// Go would generate a compile time error if we were pass t1 to geometry function
 	// because the triangle type does not implement the methods called out in the
 	// shaper interface.
