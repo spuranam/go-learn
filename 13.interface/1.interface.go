@@ -117,4 +117,11 @@ func main() {
 	if !ok {
 		fmt.Printf("%#v does not statisfy shaper interface\n", t)
 	}
+
+	// Go would generate a compile time error if we were pass t1 to geomerty function
+	// because the triangle type does not implement the methods called out in the
+	// shaper interface.
+	// uncomment next two lines to see the error in action
+	//t1 := triangle{1.0, 10.2, 13.0}
+	//geometry(t1)
 }
