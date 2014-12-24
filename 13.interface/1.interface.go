@@ -25,6 +25,8 @@ import (
 // implement many interfaces.
 // An interface type can contain a reference to an instance of any of the types
 // that implement the interface (an interface has what is called a dynamic type)
+// Interfaces are reference types.
+// In Go interfaces allows us to create polymorphic behaviour
 
 type shaper interface {
 	area() float64

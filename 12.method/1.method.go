@@ -17,7 +17,7 @@ type greetings string
 
 // A type’s method set is the set of all the methods that can be called on a value of the type.
 // If we have a pointer to a value of a custom type, its method set consists of
-// all the methods defined for the type—whether they accept a value or a pointer
+// all the methods defined for the type that accept a value or a pointer receiver.
 
 // If we have a value of a custom type, its method set consists of all those methods
 // defined for the type that accept a value receiver—but not those methods that
