@@ -33,7 +33,7 @@
 		-comma ok idiom
 	8.struct
 		- nil struct
-		- embeding
+		- embedding
 		- anonymous struct
 	9.pointers
 		- nil pointer
@@ -61,11 +61,11 @@
 		- value reciever
 		- pointer receiver
 	13.interfaces
+		- interface
 		- empty interface
-		- interface embeding
-		- error interface
 		- dynamic dispatch
-		- object oriented programing
+		- interface embedding
+		- error interface
 	14.reflections
 	15.concurrancy
 		- goroutinue
