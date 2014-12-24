@@ -72,7 +72,7 @@
 		- channel
 			- nil channel
 			- close channel
-		- select
+		- select statement
 		- sync/WaitGroup
 	16.Tools
 		- go
