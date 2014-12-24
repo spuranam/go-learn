@@ -28,6 +28,9 @@ import (
 // Interfaces are reference types.
 // In Go interfaces allows us to create polymorphic behaviour
 
+// This blog post by Russ Cox sheds more details on the implementation of interfaces in Go.
+// http://research.swtch.com/interfaces
+
 type shaper interface {
 	area() float64
 	perimeter() float64
