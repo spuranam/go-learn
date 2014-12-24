@@ -38,7 +38,7 @@ Complie go source file, execute it send the output if any to stdout and throw aw
 	go run name_of_program
 
  Compile go source file, and install it in bin subdirectory of your GOPATH
- 
+
 	go install name_of_program
 
 **Running on go playground**
@@ -49,4 +49,4 @@ Please note that go playground is sandboxed environment, with following limitati
  - No filesystem i.e. you do not have access to the filesystem
  - No network .i.e. you can not run an code that imports net package
 
-However the playground allows you get started with the business of learning the lanaguage ASAP, with getting bogged down in setting up the development/learning environment.
+However the playground allows you get started with the business of learning the language right away, with getting bogged down in setting up the development/learning environment.
