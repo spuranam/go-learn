@@ -79,19 +79,19 @@
 		- goimports
 		- godoc
 		- oracle
-		- testing
-		- bechmarking
 		- profiling
 		- race detector
 -Standard Library
-	17.os
-	18.io
-	19.flags
-	20.log
-	21.net
+	17.testing
+		- benchmarking
+	18.os
+	19.io
+	20.flags
+	21.log
+	22.net
 		- rpc
 		- http
-	22.database/sql
+	23.database/sql
 -Enviroment variables
 	- GOPATH
 	- GOROOT
