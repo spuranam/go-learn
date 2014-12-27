@@ -34,6 +34,6 @@ func main() {
 
 	// Since the program terminates when the main goroutinue returns, if we
 	// to remove the cal to sleep  we will never see the output of the function
-	// greet, since it is executing in a separate goroutine
+	// greet, since it is executing in its own goroutinue
 	time.Sleep(10 * time.Nanosecond)
 }
