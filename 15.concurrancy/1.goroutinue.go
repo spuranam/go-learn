@@ -21,7 +21,8 @@ func main() {
 	// 6. When the main goroutinue exits the program terminates.
 	// 7. Hence you must arrange for the main goroutinue to hang around until all
 	// other gorountinues either terminate or are cancelled.
-	// 8. All Go programs have atleast one goroutinue (main) associated with it.
+	// 8. All Go programs have atleast one goroutinue (main goroutinue)
+	// associated with it. The main function runs in its own goroutinue.
 
 	// A "go" statement starts the execution of a function call as an
 	// independent concurrent thread of control, or goroutine, within the
