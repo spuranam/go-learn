@@ -4,7 +4,7 @@ import "fmt"
 
 // A channel provides a mechanism for concurrently executing functions (goroutinues) to communicate by
 // sending and receiving values of a specified element type, i.e. channels are typed, you can only send
-// or recieve values of the specified type.
+// or receive values of the specified type.
 
 // The optional <- operator specifies the channel direction, send or receive. If no direction is given,
 // the channel is bidirectional. A channel may be constrained only to send or only to receive by
@@ -22,6 +22,10 @@ import "fmt"
 // channel never blocks, and would return the zero value of the channel type. It is idiomatic for only
 // for a sender to close a channel.
 
+// Channel is also synchronization operation, for unbuffered channel a send cannot proceed until someone
+// is ready to receive on the same channel. Likewise buffered channel will block and behave like unbuffered
+// channel when the channel capacity is reached.
+
 // see these excellent blog posts for more on this subject
 // http://dave.cheney.net/2013/04/30/curious-channels
 // http://guzalexander.com/2013/12/06/golang-channels-tutorial.html
@@ -33,7 +37,8 @@ func emmit(c chan string) {
 	strs := []string{"The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"}
 
 	for _, v := range strs {
-		c <- v //send v into the channel c
+		//send v into the channel c. The arrow indicate the direction of data flow.
+		c <- v
 	}
 
 	// Closing is only necessary when the receiver must be told there are no more values coming,
@@ -51,7 +56,11 @@ func main() {
 	// execute the emmit function in separate goroutinue
 	go emmit(out)
 
-	// iterate over the out channel.
+	// receive a value from a channel
+	first := <-out
+	fmt.Printf("%s\n", first)
+
+	// iterate over the channel.
 	// If the channel being iterated over is not closed we will run into deadlock
 	for v := range out {
 		fmt.Printf("%s ", v)
