@@ -19,7 +19,8 @@ import "fmt"
 
 // A channel may be closed with the built-in function close. The multi-valued assignment form of the
 // receive operator reports whether a received value was sent before the channel was closed. A closed
-// channel never blocks, and would return the zero value of the channel type.
+// channel never blocks, and would return the zero value of the channel type. It is idiomatic for only
+// for a sender to close a channel.
 
 // see these excellent blog posts for more on this subject
 // http://dave.cheney.net/2013/04/30/curious-channels
