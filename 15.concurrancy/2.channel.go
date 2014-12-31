@@ -47,6 +47,7 @@ func main() {
 	// initialize a channnel of string
 	out := make(chan string)
 
+	// execute the emmit function in separate goroutinue
 	go emmit(out)
 
 	// iterate over the out channel.
