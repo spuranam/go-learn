@@ -43,7 +43,7 @@ func emmit(c chan string) {
 
 	// Closing is only necessary when the receiver must be told there are no more values coming,
 	// such as to terminate a range loop. Since we are looping over the out channel in the main
-	// function, failure to see close this channel would result in deadlock. Uncomment the following
+	// function, failure to close this channel would result in deadlock. Uncomment the following
 	// line to see the deadlock in action
 	close(c)
 }
