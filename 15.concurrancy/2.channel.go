@@ -66,4 +66,15 @@ func main() {
 		fmt.Printf("%s ", v)
 	}
 
+	// receive from an closed channel
+	l := <-out
+	fmt.Printf("\n%#v\n", l)
+
+	// test if the channel is closed using multi valued assignment form, commonly
+	// known as comma ok idiom
+	l, ok := <-out
+	if !ok {
+		fmt.Println("out channel is closed")
+	}
+
 }
