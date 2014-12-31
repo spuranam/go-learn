@@ -13,7 +13,7 @@ import (
 // For all the cases in the statement, the channel operands of receive operations and the channel and right-hand-side
 // expressions of send statements are evaluated exactly once, in source order, upon entering the "select" statement.
 // The result is a set of channels to receive from or send to, and the corresponding values to send. Any side effects
-// in that evaluation will occur irrespective of which (if any) communication operation is selected to proceed. 
+// in that evaluation will occur irrespective of which (if any) communication operation is selected to proceed.
 // Expressions on the left-hand side of a RecvStmt with a short variable declaration or assignment are not yet evaluated.
 
 // If one or more of the communications can proceed, a single one that can proceed is chosen via a uniform pseudo-random
@@ -32,13 +32,16 @@ func emmit(done <-chan struct{}, wchan chan<- string, s []string) {
 
 	defer close(wchan)
 
+	t := time.NewTimer(2 * time.Nanosecond)
+	//t := time.After(1 * time.Nanosecond)
+
 	for {
 
 		select {
 		// we are ready to deliver a value on the wchan channel
 		case wchan <- s[i]:
 			i += 1
-			if i == l {
+			if i >= l {
 				i = 0
 			}
 		// we recieved a value on a done channel, hence abort
@@ -46,7 +49,7 @@ func emmit(done <-chan struct{}, wchan chan<- string, s []string) {
 			fmt.Println("Recieved a done signal")
 			return
 		// timeout has been breached, hence abort
-		case <-time.After(time.Nanosecond * 2):
+		case <-t.C:
 			fmt.Println("timed out")
 			return
 		}
