@@ -41,4 +41,17 @@ func main() {
 	str := "Once upon a time in a land far far away"
 	printString(s)
 	printString(str)
+
+	var name interface{} = "Marry Jane"
+	switch s := name.(type) {
+	case string:
+		fmt.Printf("Its a string:%s\n",s)
+	case Stringer:
+		fmt.Println(s.String())
+	case bool:
+		fmt.Println(s)
+	default:
+		fmt.Println("I do not know what is this?")
+	}
+
 }
