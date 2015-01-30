@@ -60,11 +60,15 @@ func main() {
 	}
 	fmt.Printf("%q\n", arr)
 
+	// multi-dimensional arrays, literal syntax
+	farr := [2][4]float64{{1.1, 1.2, 1.3, 1.4}, {2.1, 2.2, 2.3, 2.4}}
+	fmt.Printf("%#v\n", farr)
+
 	// size of multi-dimensional arrays
 	var a [3][5]int8
-	for _, h := range a {
-		fmt.Println(len(h)) // each one prints 5
+	for i, h := range a {
+		fmt.Printf("Number of columns:%d in array %d\n", len(h), i) // each one prints 5
 	}
-	fmt.Println(len(a)) // prints 3, the length of the external array
+	fmt.Printf("Number of rows:%d\n", len(a)) // prints 3, the length of the external array
 
 }
