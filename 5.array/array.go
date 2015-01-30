@@ -60,11 +60,11 @@ func main() {
 	}
 	fmt.Printf("%q\n", arr)
 
-    // size of multi-dimensional arrays
-    var a [3][5]int8
-    for _, h := range a {
-        fmt.Println(len(h)) // each one prints 5
-    }
-    fmt.Println(len(a))  // prints 3, the length of the external array
+	// size of multi-dimensional arrays
+	var a [3][5]int8
+	for _, h := range a {
+		fmt.Println(len(h)) // each one prints 5
+	}
+	fmt.Println(len(a)) // prints 3, the length of the external array
 
 }
