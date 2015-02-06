@@ -10,7 +10,11 @@ func main() {
 	// It consists of a pointer to the array, the length of the segment, and
 	// its capacity (the maximum length of the segment).
 
-	// see Go Slices: usage and internals [http://blog.golang.org/go-slices-usage-and-internals]
+	// see for more details
+	// Go Slices: usage and internals [http://blog.golang.org/go-slices-usage-and-internals]
+	// http://blog.golang.org/slices
+	// http://www.goinggo.net/2013/08/understanding-slices-in-go-programming.html
+
 	// some note worthy properties of slices are:
 	// slice is a referrence type
 	// slice can grow beyond the size defined at the time of declaration
